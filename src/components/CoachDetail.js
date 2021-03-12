@@ -26,7 +26,7 @@ export default function CoachDetail(){
         });
     },[]);
     return (
-        coach ? 
+        coach != null ? 
         <div className="container">
         <div className="card bg-light">
             <div className="row">
@@ -54,7 +54,7 @@ export default function CoachDetail(){
                             )
                         })
                     }  
-            </div> 
+            </div>  
             </div> 
             <div className="col-3">
                 {/* This need to be inside another subcomponent */}
